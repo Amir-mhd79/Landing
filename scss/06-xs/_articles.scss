@@ -1,0 +1,55 @@
+body {
+  .articles {
+    width: 100%;
+    .article {
+      width: inherit;
+      height: 530px;
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 30px;
+      align-items: center;
+      .leftDivision {
+        width: 300px;
+        margin-left: 10px;
+        .articleImage {
+          width: inherit;
+          height: inherit;
+        }
+      }
+      .rightDivision {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .lightHeading {
+          color: var(--text-color3);
+          margin-bottom: 16px;
+        }
+        .lightbody {
+          width: inherit;
+          color: var(--text-color4);
+          text-align: justify;
+          font-size: 14px;
+        }
+        .buttonPurchase {
+          width: 160px;
+          height: 32px;
+          text-transform: capitalize;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 300ms;
+          background-color: var(--button-color);
+          color: white;
+          margin-top: 40px;
+          border: none;
+          &:hover {
+            background-color: var(--hover-color);
+          }
+        }
+      }
+    }
+    .heightFix{
+      height: 600px;
+    }
+  }
+}

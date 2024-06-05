@@ -1,0 +1,20 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "2xl": "node-sass -w ./scss/01-2xl/2xl.scss -o ./css/sizes/ -r --output-style compressed",
+    "xl": "node-sass -w ./scss/02-xl/xl.scss -o ./css/sizes/ -r --output-style compressed",
+    "lg": "node-sass -w ./scss/03-lg/lg.scss -o ./css/sizes/ -r --output-style compressed",
+    "md": "node-sass -w ./scss/04-md/md.scss -o ./css/sizes/ -r --output-style compressed",
+    "sm": "node-sass -w ./scss/05-sm/sm.scss -o ./css/sizes/ -r --output-style compressed",
+    "xs": "node-sass -w ./scss/06-xs/xs.scss -o ./css/sizes/ -r --output-style compressed",
+    "set": "node-sass -w ./scss/setting/setting.scss -o ./css/ -r --output-style compressed"
+  },
+  "author": "Amirmohammad Akbarloo",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

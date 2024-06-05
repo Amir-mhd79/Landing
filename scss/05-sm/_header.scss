@@ -1,0 +1,94 @@
+body {
+  .header {
+    width: 100%;
+    height: 60px;
+    .navigation {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      z-index: 1000;
+      .collapseMenu {
+        .fa-bars {
+          font-size: 30px;
+        }
+        .menu {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          bottom: -120px;
+          left: 0;
+          background-color: var(--back-color);
+          width: 100vw;
+          .item {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: inherit;
+            transition: 300ms;
+            .Link {
+              display: inline-block;
+              font-size: 14px;
+              text-transform: capitalize;
+              color: var(--textColor1);
+            }
+            &:hover {
+              background-color: var(--hover-color);
+            }
+            &:hover > .Link {
+              color: white;
+            }
+          }
+          .buy {
+            width: 160px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            .button {
+              align-items: center;
+              width: inherit;
+              height: 26px;
+              background-color: var(--button-color);
+              border: none;
+              color: white;
+              text-transform: capitalize;
+              cursor: pointer;
+              box-shadow: 0 2px 5px var(--black-shadow);
+              transition: 300ms;
+              border-radius: 5px;
+              &:hover {
+                background-color: var(--hover-color);
+              }
+            }
+          }
+        }
+      }
+      .left {
+        display: none;
+      }
+      .logo {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        .logoLanding {
+          height: inherit;
+          .logoLandingImage {
+            height: inherit;
+            float: right;
+          }
+        }
+      }
+      .buy {
+        display: none;
+      }
+    }
+  }
+}
+.showMenu {
+  display: flex !important;
+}
